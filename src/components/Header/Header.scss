@@ -1,39 +1,38 @@
 .header {
-  margin: 20px auto;
+  font-size: 27px;
   display: flex;
-  max-width: 1177px;
-  width: 100%;
-  height: 48px;
-  background: #d9d9d9;
   align-items: center;
-  &__logo {
-    max-width: 181px;
-    width: 100%;
-    height: 37px;
-    margin-left: 26px;
-    background: #f1f2ae;
-    margin-right: 350px;
+  justify-content: space-between;
+  height: 60px;
+  background: rgb(71, 58, 156);
+  color: #fff;
+  grid-area: header;
+
+  .burger {
+    cursor: pointer;
+
+    &-img {
+      margin-left: 20px;
+      width: 25px;
+      height: 25px;
+      fill: #fff;
+    }
   }
-  &__title {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    color: #000000;
-    margin-right: 200px;
-    white-space: nowrap;
-  }
-  &__nav-menu {
-    display: flex;
-    gap: 19px;
-    list-style: none;
-    margin-right: 28px;
-    .menu-item {
-      width: 46px;
-      height: 37px;
-      align-items: center;
-      background: #e7efd6;
+
+  .icons {
+
+    .chevron {
+      width: 28px;
+      height: 28px;
+      margin: 0 15px;
+      cursor: pointer;
+    }
+
+    .user {
+      width: 28px;
+      height: 28px;
+      margin: 0 20px;
+      cursor: pointer;
     }
   }
 }
